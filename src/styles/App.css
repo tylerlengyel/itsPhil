@@ -1,0 +1,139 @@
+/* src/styles/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Default text color */
+}
+
+nav {
+  background-color: #333; /* Dark background for the navigation bar */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #00ff00; /* Bright green on hover */
+}
+
+button, a {
+  padding: 0.5rem 1rem;
+  background-color: forestgreen; /* Forest Green background for buttons and links */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded edges for buttons and links */
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center; /* Center align text */
+  display: inline-block;
+  text-decoration: none; /* Remove underline for links styled as buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click animations */
+}
+
+button:hover, a:hover {
+  background-color: darkgreen; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active, a:active {
+  transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+div[id$="-trait-image"], #final-preview-box {
+  background-color: white !important; /* Ensure canvas and preview boxes remain white */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+h1, h2, h3, p {
+  color: white; /* Ensure text is readable against the black background */
+  margin: 0;
+  padding: 10px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#final-mint-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: black; /* Keep background black */
+}
+
+#final-preview-box {
+  width: 382px;
+  height: 382px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white; /* Keep the preview box white */
+}
+
+#final-saved-traits {
+  text-align: left;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255); /* Keep the traits section white */
+}
+
+#final-saved-traits ul li {
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: black !important; /* Ensure the text is black */
+}
+
+#final-saved-traits ul li:hover {
+  color: #007bff; /* Light blue text on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222; /* Slightly lighter black for the footer */
+  color: #aaa;
+  font-size: 14px;
+}
+
+footer a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
